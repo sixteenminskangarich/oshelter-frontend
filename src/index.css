@@ -1,0 +1,1281 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.scrollable-drawer {
+    max-height: 80vh;
+    /* Adjust as needed */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    padding-right: 1rem;
+    /* Optional: to prevent content from being cut off */
+}
+
+html,
+body,
+#root,
+.app {
+    height: 100%;
+    width: 100%;
+}
+
+slick-arrow.slick-next,
+.slick-arrow.slick-prev {
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0.8;
+    height: 30px;
+    width: 30px;
+}
+
+.slick-arrow.slick-next:hover,
+.slick-arrow.slick-prev:hover {
+    opacity: 1;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    display: none;
+}
+
+.arrows {
+    height: 20px;
+    width: 20px;
+    margin: 1px;
+}
+
+.amentity {
+    color: gray;
+}
+
+.currency {
+    color: black;
+    font-size: 25px;
+}
+
+.mobile-screen-property {
+    width: 360px;
+    height: 390px;
+    margin-left: 10px;
+    margin-right: 7px;
+}
+
+.mobile-screen-property .mb-image {
+    width: 100%;
+    height: 190px;
+}
+
+.mobile-screen-property .amentities {
+    color: grey;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+.mobile-screen-property .location {
+    color: grey;
+    font-size: 8px;
+    letter-spacing: 1px;
+}
+
+.mobile-screen-property .property-type {
+    position: absolute;
+    bottom: 165px;
+    right: 4px;
+}
+
+.mobile-screen-property .property-amentity {
+    position: absolute;
+    top: 320px;
+    left: 28px;
+    font-size: 10px;
+}
+
+.mobile-screen-property .property-line {
+    width: 30px;
+    background-color: #7d8eed;
+    border: none;
+    height: 4px;
+    margin: 0;
+    margin-bottom: 10px;
+    position: relative;
+    right: 5px;
+}
+
+.mobile-screen-property .property-type .property-badge {
+    position: relative;
+    top: 2px;
+}
+
+.rent-popular-homes {
+    margin-top: -194px;
+}
+
+.rent-popular-homes .title {
+    margin-left: 200px;
+    margin-bottom: -30px;
+}
+
+.rent-popular-homes .rent-popular-homes-body {
+    margin-bottom: 40px;
+}
+
+.featured-homes-title {
+    margin-left: 200px;
+    margin-bottom: -30px;
+}
+
+.navbar-item:after {
+    content: '';
+    display: block;
+    width: 60%;
+    position: relative;
+    top: 4px;
+    border: 1px solid white;
+}
+
+.addbanner {
+    height: 380px;
+}
+
+.detail-property {
+    width: 860px;
+}
+
+.detail-property .detail-property-image {
+    width: 860px;
+}
+
+.text-bg-color {
+    color: #283890;
+}
+
+.container-1 {
+    width: 100%;
+    height: 270px;
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-height: 270px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.container-1 .image {
+    width: 225px;
+    margin-right: 5px;
+    height: 225px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.container-1 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.container-1 .image span {
+    position: absolute;
+    top: -2px;
+    right: 9px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.delete {
+    color: white;
+    position: absolute;
+    margin-top: 8px;
+    margin-right: -6px;
+}
+
+.logo-image {
+    height: 80px;
+    width: 210px;
+    position: relative;
+    right: 180px;
+}
+
+@media only screen and (max-width:1466px) {
+    .mobile-screen-property {
+        width: 297px;
+        height: 390px;
+        margin-left: 10px;
+        margin-right: 7px;
+    }
+
+    .mobile-screen-property .mb-image {
+        width: 100%;
+        height: 190px;
+    }
+
+    .mobile-screen-property .amentities {
+        color: grey;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-screen-property .location {
+        color: grey;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .mobile-screen-property .property-type {
+        position: absolute;
+        bottom: 165px;
+        right: 4px;
+    }
+
+    .mobile-screen-property .property-amentity {
+        position: absolute;
+        top: 320px;
+        left: 60px;
+    }
+
+    .mobile-screen-property .property-line {
+        width: 100%;
+        background-color: #7d8eed;
+        border: none;
+        height: 2px;
+        margin: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        position: relative;
+        right: 25px;
+    }
+
+    .mobile-screen-property .property-type .property-badge {
+        position: relative;
+        top: 2px;
+    }
+}
+
+@media only screen and (max-width:1366px) {
+    .mobile-screen-property {
+        width: 297px;
+        height: 390px;
+        margin-left: 10px;
+        margin-right: 7px;
+    }
+
+    .mobile-screen-property .mb-image {
+        width: 100%;
+        height: 190px;
+    }
+
+    .mobile-screen-property .amentities {
+        color: grey;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-screen-property .location {
+        color: grey;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .mobile-screen-property .property-type {
+        position: absolute;
+        bottom: 165px;
+        right: 4px;
+    }
+
+    .mobile-screen-property .property-amentity {
+        position: absolute;
+        top: 320px;
+        left: 10px;
+        font-size: 8px;
+    }
+
+    .mobile-screen-property .property-line {
+        width: 50px;
+        background-color: #7d8eed;
+        border: none;
+        height: 4px;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+        left: 5px;
+    }
+
+    .mobile-screen-property .property-type .property-badge {
+        position: relative;
+        top: 2px;
+    }
+}
+
+@media only screen and (max-width:818px) {
+    .mobileview {
+        width: 350px;
+        height: 310px;
+        margin-left: -20px;
+    }
+
+    .mobileview .mobileImage {
+        width: 100%;
+        height: 170px;
+    }
+
+    .mobileview .title {
+        font-size: 14px;
+    }
+
+    .mobileview .price {
+        font-size: 15px;
+    }
+
+    .mobileview .location {
+        font-size: 10px;
+    }
+
+    .mobileview .locations {
+        margin-top: -18px;
+    }
+
+    .mobileview .description {
+        font-size: 13px;
+    }
+
+    .mobile-screen-property {
+        width: 225px;
+        height: 315px;
+        margin-left: -50px;
+    }
+
+    .mobile-screen-property .mb-image {
+        width: 100%;
+        height: 240px;
+    }
+
+    .mobile-screen-property .amentities {
+        color: grey;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-screen-property .property-amentity {
+        position: absolute;
+        top: 200px;
+        left: 18px;
+        font-size: 10px;
+    }
+
+    .mobile-screen-property .property-amentity .property-lined {
+        width: 50px;
+        background-color: #7d8eed;
+        border: none;
+        height: 2px;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 60px;
+        right: 5px;
+    }
+
+    .mobile-screen-property .property-amentity .property-amentity-icons {
+        position: relative;
+        top: 60px;
+        right: 5px;
+    }
+
+    .mobile-screen-property .location {
+        color: grey;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .mobile-screen-property .property-type {
+        position: absolute;
+        bottom: 145px;
+        right: 4px;
+    }
+
+    .mobile-screen-property .mobile-location {
+        font-size: 14px;
+    }
+
+    .mobile-screen-property .property-type .property-badge {
+        position: relative;
+        top: 0.5px;
+    }
+
+
+    .mobile-screen-property-card {
+        width: 245px;
+        height: 315px;
+    }
+
+    .mobile-screen-property-card .mb-image {
+        width: 100%;
+        height: 240px;
+    }
+
+    .mobile-screen-property-card .amentities {
+        color: grey;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-screen-property-card .property-amentity {
+        position: absolute;
+        top: 200px;
+        left: 18px;
+        font-size: 10px;
+    }
+
+    .mobile-screen-property-card .property-amentity .property-lined {
+        width: 50px;
+        background-color: #7d8eed;
+        border: none;
+        height: 2px;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 60px;
+        right: 5px;
+    }
+
+    .mobile-screen-property-card .property-amentity .property-amentity-icons {
+        position: relative;
+        top: 60px;
+        right: 5px;
+    }
+
+    .mobile-screen-property-card .location {
+        color: grey;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .mobile-screen-property-card .property-type {
+        position: absolute;
+        bottom: 145px;
+        right: 4px;
+    }
+
+    .mobile-screen-property-card .mobile-location {
+        font-size: 14px;
+    }
+
+    .mobile-screen-property-card .property-type .property-badge {
+        position: relative;
+        top: 0.5px;
+    }
+
+    .siarrowright {
+        position: absolute;
+        top: 150px;
+    }
+
+    .amentity {
+        font-size: 13px;
+        font-family: 'Josefin Sans';
+    }
+
+    .amentity .currency {
+        font-size: 17px;
+    }
+
+    .home-banner {
+        height: 200px;
+    }
+
+    .home-banner .banner-navigation {
+        display: inline;
+        margin-right: 29px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: '"josephin-sans"';
+        position: relative;
+        bottom: 10px;
+
+    }
+
+    .home-banner .banner-search {
+        width: 100%;
+        height: 40px;
+    }
+
+    .home-banner .banner-search .banner-input {
+        height: 40px;
+    }
+
+    .home-banner .banner-search .banner-search-icon {
+        font-size: 40px;
+    }
+
+    .featured-homes {
+        margin-left: -10px;
+        font-size: 18px;
+    }
+
+    .off-the-plans {
+        margin-left: 17px;
+        font-size: 18px;
+    }
+
+    .popular-homes {
+        margin-top: -75px;
+    }
+
+    .property-item {
+        position: relative;
+        top: -20px;
+    }
+
+    .latest-homes {
+        margin-top: -145px;
+    }
+
+    .off-the-plan {
+        margin-top: -75px;
+    }
+
+    .mobile-ad-banner-1 {
+        position: relative;
+        top: -130px;
+    }
+
+    .view-all {
+        position: relative;
+        left: 730px;
+        top: -45px;
+        font-size: 14px;
+        color: #3498db;
+    }
+
+    .footer-navigation {
+        position: relative;
+        right: 50px;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 644px) {
+    .logo-image {
+        height: 70px;
+        width: 140px;
+        position: relative;
+        right: 10px;
+    }
+
+    .mobileview {
+        width: 340px;
+        height: 310px;
+        margin-right: -60px;
+    }
+
+    .mobileview .mobileImage {
+        width: 100%;
+        height: 170px;
+    }
+
+    .mobileview .title {
+        font-size: 14px;
+    }
+
+    .mobileview .price {
+        font-size: 15px;
+    }
+
+    .mobileview .location {
+        font-size: 10px;
+    }
+
+    .mobileview .locations {
+        margin-top: -18px;
+    }
+
+    .mobileview .description {
+        font-size: 13px;
+    }
+
+    .mobile-screen-property {
+        width: 240px;
+        height: 300px;
+    }
+
+    .mobile-screen-property .mb-image {
+        width: 100%;
+        height: 150px;
+        height: 130px;
+    }
+
+    .mobile-screen-property .amentities {
+        color: grey;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-screen-property .property-amentity {
+        position: absolute;
+        top: 200px;
+        left: 18px;
+        font-size: 10px;
+    }
+
+    .mobile-screen-property .property-amentity .property-lined {
+        width: 50px;
+        background-color: #7d8eed;
+        border: none;
+        height: 2px;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 60px;
+        right: 5px;
+    }
+
+    .mobile-screen-property .mobile-location {
+        font-size: 13px;
+    }
+
+    .mobile-screen-property .property-amentity .property-amentity-icons {
+        position: relative;
+        top: 60px;
+        right: 5px;
+    }
+
+    .mobile-screen-property .location {
+        color: grey;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .mobile-screen-property .property-type {
+        position: absolute;
+        bottom: 130px;
+        right: 4px;
+    }
+
+    .mobile-screen-property .property-type .property-badge {
+        position: relative;
+        top: 0.5px;
+    }
+
+    .siarrowright {
+        position: absolute;
+        top: 150px;
+    }
+
+    .amentity {
+        font-size: 13px;
+        font-family: 'Josefin Sans';
+    }
+
+    .amentity .currency {
+        font-size: 17px;
+    }
+
+    .home-banner {
+        height: 300px;
+    }
+
+    .home-banner .banner-navigation {
+        display: inline;
+        margin-right: 29px;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: '"josephin-sans"';
+        position: relative;
+        bottom: 10px;
+    }
+
+    .home-banner .banner-search {
+        width: 100%;
+        height: 40px;
+    }
+
+    .home-banner .banner-search .banner-input {
+        height: 40px;
+    }
+
+    .home-banner .banner-search .banner-search-icon {
+        font-size: 40px;
+    }
+
+    .featured-homes {
+        margin-left: 17px;
+        font-size: 18px;
+    }
+
+    .off-the-plans {
+        margin-left: 17px;
+        font-size: 18px;
+    }
+
+    .popular-homes {
+        margin-top: -75px;
+    }
+
+    .property-item {
+        position: relative;
+        top: -20px;
+    }
+
+    .latest-homes {
+        margin-top: -145px;
+    }
+
+    .off-the-plan {
+        margin-top: -75px;
+    }
+
+    .mobile-ad-banner {
+        margin-top: -58px;
+    }
+
+    .mobile-ad-banner-1 {
+        position: relative;
+        top: -130px;
+    }
+
+    .view-all {
+        position: relative;
+        left: 338px;
+        top: -45px;
+        font-size: 14px;
+        color: #3498db;
+    }
+
+    .mobile-screen-property-card {
+        width: 200px;
+        height: 300px;
+        margin-left: 1px;
+        margin-right: 7px;
+    }
+
+    .mobile-footer {
+        position: relative;
+        bottom: 60px;
+    }
+
+    .footer-navigation {
+        position: relative;
+        right: 50px;
+        font-size: 15px;
+    }
+
+    .apartment {
+        position: absolute;
+        bottom: 230px;
+        left: 25px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .mobileview {
+        width: 280px;
+        height: 300px;
+        margin-left: -70px;
+    }
+
+    .mobileview .mobileImage {
+        width: 100%;
+        height: 150px;
+    }
+
+    .mobileview .title {
+        font-size: 14px;
+    }
+
+    .mobileview .price {
+        font-size: 15px;
+    }
+
+    .mobileview .location {
+        font-size: 10px;
+    }
+
+    .mobileview .locations {
+        margin-top: -18px;
+    }
+
+    .mobileview .description {
+        font-size: 13px;
+    }
+
+    .mobile-screen-property {
+        width: 230px;
+        height: 320px;
+        margin-left: 7px;
+        margin-right: 36px;
+    }
+
+    .mobile-screen-property .mb-image {
+        width: 100%;
+        height: 150px;
+    }
+
+    .mobile-screen-property .property-type {
+        position: absolute;
+        bottom: 150px;
+        right: 4px;
+    }
+
+    .mobile-screen-property .amentities {
+        color: black;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-screen-property .property-amentity {
+        position: absolute;
+        top: 200px;
+        left: 18px;
+        font-size: 10px;
+    }
+
+    .mobile-screen-property .property-amentity .property-lined {
+        width: 50px;
+        background-color: #7d8eed;
+        border: none;
+        height: 2px;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 60px;
+        right: 5px;
+    }
+
+    .mobile-screen-property .mobile-location {
+        font-size: 14px;
+    }
+
+    .mobile-screen-property .property-amentity .property-amentity-icons {
+        position: relative;
+        top: 65px;
+        right: 5px;
+    }
+
+    .mobile-screen-property .location {
+        color: black;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .amentity .currency {
+        font-size: 15px;
+    }
+
+    .view-all {
+        position: relative;
+        left: 315px;
+        top: -45px;
+        font-size: 14px;
+        color: #3498db;
+    }
+
+    .mobile-screen-property-card {
+        width: 180px;
+        height: 300px;
+    }
+
+    .mobile-screen-property-card .mb-image {
+        width: 100%;
+        height: 240px;
+    }
+
+    .mobile-screen-property-card .amentities {
+        color: grey;
+        font-size: 8px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-screen-property-card .property-amentity {
+        position: absolute;
+        top: 200px;
+        left: 18px;
+        font-size: 10px;
+    }
+
+    .mobile-screen-property-card .property-amentity .property-lined {
+        width: 50px;
+        background-color: #7d8eed;
+        border: none;
+        height: 2px;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 50px;
+        right: 5px;
+    }
+
+    .mobile-screen-property-card .property-amentity .property-amentity-icons {
+        position: relative;
+        top: 50px;
+        right: 17px;
+    }
+
+    .mobile-screen-property-card .location {
+        color: grey;
+        font-size: 6px;
+        letter-spacing: 1px;
+    }
+
+    .mobile-screen-property-card .property-type {
+        position: absolute;
+        bottom: 130px;
+        right: 4px;
+    }
+
+    .mobile-screen-property-card .mobile-location {
+        font-size: 12px;
+    }
+
+    .mobile-screen-property-card .property-type .property-badge {
+        position: relative;
+        top: 0.5px;
+    }
+
+    .mobile-footer {
+        position: relative;
+        bottom: 60px;
+    }
+
+    .footer-navigation {
+        position: relative;
+        right: 40px;
+        font-size: 12px;
+    }
+
+    .apartment {
+        position: absolute;
+        bottom: 230px;
+        left: 25px;
+    }
+
+    .room {
+        position: absolute;
+        bottom: 25px;
+        left: 25px
+    }
+
+    .house {
+        position: absolute;
+        bottom: -120px;
+        left: 25px
+    }
+
+    .hostel {
+        position: absolute;
+        bottom: 300px;
+        right: 25px
+    }
+
+    .land {
+        position: absolute;
+        bottom: 70px;
+        right: 25px
+    }
+
+    .office-space {
+        position: absolute;
+        bottom: -120px;
+        right: 25px
+    }
+
+    .mobile-screen-login .mobile-screen-drag {
+        position: relative;
+        bottom: 190px;
+    }
+
+    .mobile-screen-login .mobile-screen-drag .logo-image {
+        position: absolute;
+        top: 200px;
+    }
+
+    .addbanner {
+        width: 400px;
+        height: 230px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    .mobileview {
+        width: 270px;
+        height: 300px;
+        margin-left: -50px;
+    }
+
+    .mobileview .mobileImage {
+        width: 100%;
+        height: 150px;
+    }
+
+    .mobileview .title {
+        font-size: 14px;
+    }
+
+    .mobileview .price {
+        font-size: 15px;
+    }
+
+    .mobileview .location {
+        font-size: 10px;
+    }
+
+    .mobileview .locations {
+        margin-top: -18px;
+    }
+
+    .mobileview .description {
+        font-size: 13px;
+    }
+
+    .mobile-screen-property {
+        width: 210px;
+        height: 300px;
+        margin-left: -2px;
+        margin-right: 42px;
+    }
+
+    .mobile-screen-property .mb-image {
+        width: 100%;
+        height: 150px;
+    }
+
+    .mobile-screen-property .property-amentity .property-lined {
+        width: 50px;
+        background-color: #7d8eed;
+        border: none;
+        height: 2px;
+        margin: 0;
+        margin-bottom: 10px;
+        position: relative;
+        top: 50px;
+        right: 5px;
+    }
+
+    .mobile-screen-property .mobile-location {
+        font-size: 13px;
+    }
+
+    .mobile-screen-property .property-amentity .property-amentity-icons {
+        position: relative;
+        top: 50px;
+        right: 5px;
+    }
+
+    .mobile-screen-property .location {
+        color: black;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .mobile-screen-property .amentities {
+        color: black;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .mobile-screen-property .location {
+        color: black;
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .apartment {
+        position: absolute;
+        bottom: 40px;
+        left: 25px;
+    }
+
+    .room {
+        position: absolute;
+        bottom: -130px;
+        left: 25px
+    }
+
+    .house {
+        position: absolute;
+        bottom: -280px;
+        left: 25px
+    }
+
+    .hostel {
+        position: absolute;
+        bottom: 135px;
+        right: 25px
+    }
+
+    .land {
+        position: absolute;
+        bottom: -90px;
+        right: 25px
+    }
+
+    .office-space {
+        position: absolute;
+        bottom: -280px;
+        right: 25px
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .mobileview {
+        width: 250px;
+        height: 300px;
+        margin-left: -50px;
+    }
+
+    .mobileview .mobileImage {
+        width: 100%;
+        height: 150px;
+    }
+
+    .mobileview .title {
+        font-size: 14px;
+    }
+
+    .mobileview .price {
+        font-size: 15px;
+    }
+
+    .mobileview .location {
+        font-size: 10px;
+    }
+
+    .mobileview .locations {
+        margin-top: -18px;
+    }
+
+    .mobileview .description {
+        font-size: 13px;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    z-index: 1000;
+}
+
+.dropdown-option {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+.loader {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #fff;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.custom-confirm-button {
+    background-color: #283890;
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.custom-cancel-button {
+    background-color: #740a02;
+    /* Red */
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.custom-confirm-button:hover {
+    background-color: #425cf3;
+}
+
+.custom-cancel-button:hover {
+    background-color: #e53935;
+}
+
+.swal2-actions {
+    justify-content: flex-end !important;
+    /* Align buttons to the right */
+}
+
+.popping-icon {
+    animation: pop 1.2s ease-in-out infinite;
+}
+
+@keyframes pop {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+.custom-swal-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+.custom-swal-input {
+    border: 2px solid #283890;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 80%; /* Adjust width to fit the popup */
+    max-width: 300px; /* Optional: Limit the maximum width */
+    box-sizing: border-box;
+    margin-top: 15px; /* Add spacing from other elements */
+}
+
+.custom-swal-input:focus {
+    outline: none;
+    border-color: #425cf3;
+    box-shadow: 0 0 5px rgba(66, 92, 243, 0.5);
+}
